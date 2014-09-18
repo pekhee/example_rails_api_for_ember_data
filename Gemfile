@@ -10,6 +10,8 @@ gem 'sqlite3'
 
 gem 'active_model_serializers', '~> 0.8.0'
 
+gem 'jazz_hands'
+
 gem 'rack-cors', :require => 'rack/cors'
 
 
