@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  has_many :profile
+  has_many :profiles
 end
