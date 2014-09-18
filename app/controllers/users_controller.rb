@@ -34,7 +34,10 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit!
+    user_params = params.require(:user).permit!
+    user_params[:profiles_attributes] = user_params.delete :profiles
+
+    user_params
   end
 
   def find_user
